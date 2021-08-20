@@ -13,11 +13,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .header-light {
-    width: 100%;
-    height: 337px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+// @import '../../assets/scss/_variable';
+
+.header-light {
+  width: 100%;
+  height: 337px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

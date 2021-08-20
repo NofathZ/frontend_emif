@@ -26,5 +26,9 @@
 </script>
 
 <style lang="scss" scoped>
+// @import '../assets/scss/_variable';
 
+// * {
+//   font-family: 'Poppins', sans-serif !important;
+// }
 </style>

@@ -18,6 +18,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: () => import('../views/About.vue')
+  },
+  {
+    path: '/about/emif',
+    name: 'About Emif',
+    component: () => import('../views/AboutEMIF.vue')
   }
 ]
 

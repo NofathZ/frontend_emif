@@ -11,7 +11,7 @@
               <h4 class="text-white heading-four mb-4 category-title-text">{{ category.judul }}</h4>
               <p class="text-white lead-four category-desc-text">{{ category.deskripsi }}</p>
             </div>
-            <button class="read-more-btn">Telusuri</button>
+            <button class="heading-five read-more-btn">Telusuri</button>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@ export default {
           deskripsi: "Eksekutif Mahasiswa Informatika adalah lembaga yang memiliki fungsi sebagai badan eksekutif",
           url: "/",
           background: {
-            backgroundColor: "#210000"
+            backgroundColor: "#000F14"
           },
           img: require('@/assets/img/About/about-emif.svg')
         },
@@ -47,7 +47,7 @@ export default {
           deskripsi: "Eksekutif Mahasiswa Informatika adalah lembaga yang memiliki fungsi sebagai badan eksekutif",
           url: "/",
           background: {
-            backgroundColor: "#000F14"
+            backgroundColor: "#210000"
           },
           img: require('@/assets/img/About/about-bpmif.svg')
         },

@@ -8,7 +8,7 @@
               <h4 class="text-white heading-four mb-4">{{ category.judul }}</h4>
               <p class="text-white lead-four">{{ category.deskripsi }}</p>
             </div>
-            <button class="read-more-btn">Baca Selengkapnya</button>
+            <button class="heading-five read-more-btn">Baca Selengkapnya</button>
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/_variable';
+// @import '../../assets/scss/_variable';
 
 .custom-card {
   min-height: 225px;
