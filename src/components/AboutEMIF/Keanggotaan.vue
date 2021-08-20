@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 style="color: black">Keanggotaan</h1>
+    <h1 style="text-align: center">Keanggotaan</h1>
     <ketua></ketua>
     <wakil-ketua></wakil-ketua>
     <sekben></sekben>
