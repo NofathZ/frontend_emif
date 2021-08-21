@@ -1,6 +1,6 @@
 <template>
-  <div class="bg">
-    <h1 class="title">Visi dan Misi</h1>
+  <div class="background" style="padding-top: 88px; padding-bottom: 88px">
+    <h1 class="title heading-one" style="margin-bottom: 84px">Visi dan Misi</h1>
     <div class="visi container">
       <h3 class="heading-two">Visi</h3>
       <p class="lead-four">Menjaga seluruh anggota Himpunan Mahasiswa Informatika tetap ada dalam kurawal himpunan</p>
@@ -28,7 +28,7 @@
   color: white;
 }
 
-.bg {
+.background {
   background-color: #142227;
 }
 

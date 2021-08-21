@@ -1,8 +1,8 @@
 <template>
   <div class="bg-gradient">
-    <keanggotaan></keanggotaan>
-    <departemen></departemen>
-    <biro></biro>
+    <keanggotaan style="margin-bottom: 203px"></keanggotaan>
+    <departemen style="margin-bottom: 194px"></departemen>
+    <biro style="padding-bottom: 232px"></biro>
   </div>
 </template>
 

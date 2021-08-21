@@ -8,9 +8,9 @@
           </div>
           <div class="col-lg d-flex justify-content-center align-items-center" style="padding: 0">
             <div class="detail">
-              <h1>Pak Ketua</h1>
-              <p>Wakil Ketua EMIF</p>
-              <p>Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.</p>
+              <h1 class="lead-two">Pak Wakil Ketua</h1>
+              <p class="lead-three">Wakil Ketua EMIF</p>
+              <p class="lead-four">Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.</p>
             </div>
           </div>
           <div class="col-lg photo-box d-none d-lg-block" style="padding: 0">
@@ -20,9 +20,9 @@
       </div>
     </div>
     <div class="background">
-      <div class="blue-line"></div>
-      <div class="black-line"></div>
-      <div class="blue-line"></div>
+      <div class="top-line"></div>
+      <div class="center-line"></div>
+      <div class="empty-line"></div>
     </div>
   </div>
 </template>
@@ -71,6 +71,10 @@
   background-position: center top;
 }
 
+.detail {
+  margin-right: 50px;
+}
+
 @media screen and (max-width: 992px){
   .photo {
     width: 418px;
@@ -88,7 +92,11 @@
   }
 
   .detail {
-    text-align: center;
+    margin: 0;
+
+    h1, p {
+      text-align: center;
+    }
   }
 }
 
@@ -99,12 +107,17 @@
   }
 }
 
-.blue-line {
+.top-line {
   height: 40px;
   width: 100%;
-  background-color: blue;
+  background-color: #511407;
 }
-.black-line {
+.empty-line {
+  height: 40px;
+  width: 100%;
+  background: none;
+}
+.center-line {
   height: 309px;
   width: 100%;
   background-color: black;

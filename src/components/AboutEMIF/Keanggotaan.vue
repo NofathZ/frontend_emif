@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 style="text-align: center">Keanggotaan</h1>
-    <ketua></ketua>
-    <wakil-ketua></wakil-ketua>
+    <h1 class="heading-one" style="text-align: center; margin-bottom: 117px">Keanggotaan</h1>
+    <ketua style="margin-bottom: 168px;"></ketua>
+    <wakil-ketua style="margin-bottom: 290px"></wakil-ketua>
     <sekben></sekben>
   </div>
 </template>

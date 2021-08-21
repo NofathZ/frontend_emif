@@ -8,18 +8,18 @@
           </div>
           <div class="col-lg d-flex justify-content-center align-items-center" style="padding: 0">
             <div class="detail">
-              <h1>Pak Ketua</h1>
-              <p>Ketua EMIF</p>
-              <p>Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.</p>
+              <h1 class="lead-two">Pak Ketua</h1>
+              <p class="lead-three">Ketua EMIF</p>
+              <p class="lead-four">Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="background">
-      <div class="blue-line"></div>
-      <div class="black-line"></div>
-      <div class="blue-line"></div>
+      <div class="top-line"></div>
+      <div class="center-line"></div>
+      <div class="empty-line"></div>
     </div>
   </div>
 </template>
@@ -85,7 +85,10 @@
   }
 
   .detail {
-    text-align: center;
+
+    h1, p {
+      text-align: center;
+    }
   }
 }
 
@@ -96,12 +99,17 @@
   }
 }
 
-.blue-line {
+.top-line {
   height: 40px;
   width: 100%;
-  background-color: blue;
+  background-color: #083B4D;
 }
-.black-line {
+.empty-line {
+  height: 40px;
+  width: 100%;
+  background: none;
+}
+.center-line {
   height: 309px;
   width: 100%;
   background-color: black;

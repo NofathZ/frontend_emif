@@ -4,7 +4,7 @@
     <header-comp></header-comp>
     <visi-misi></visi-misi>
     <internal-box></internal-box>
-    <h1>Last BG</h1>
+    <footer-comp></footer-comp>
   </div>
 </template>
 
@@ -13,6 +13,7 @@
   import Header from '../components/AboutEMIF/Header.vue'
   import VisiMisi from '../components/AboutEMIF/VisiMisi.vue'
   import InternalBox from '../components/AboutEMIF/InternalBox.vue'
+  import Footer from '../components/Footer.vue'
   
   export default {
     components: {
@@ -20,6 +21,7 @@
       'header-comp': Header,
       'visi-misi': VisiMisi,
       'internal-box': InternalBox,
+      'footer-comp': Footer
     }
   }
 </script>

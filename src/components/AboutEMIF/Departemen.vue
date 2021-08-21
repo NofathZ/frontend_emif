@@ -1,20 +1,26 @@
 <template>
   <div>
-    <h1 style="text-align: center">Departemen</h1>
-    <p style="text-align: center">penjelasan singkat tentang apa itu departemen</p>
+    <h1 class="heading-one" style="text-align: center; margin-bottom: 47px">Departemen</h1>
+    <p class="lead-two" style="text-align: center; margin-bottom: 203px">penjelasan singkat tentang apa itu departemen</p>
 
     <div>
       <div class="container-bar">
         <div class="container">
-          <div class="item">
-            <button>Button</button>
-          </div>
-          <div class="item">
-            <button>Button</button>
-          </div>
-          <div class="item">
-            <button>Button</button>
-          </div>
+          <button class="item heading-five">
+            MSD
+          </button>
+          <button class="item heading-five">
+            SOSMA
+          </button>
+          <button class="item heading-five">
+            PSDM
+          </button>
+          <button class="item heading-five">
+            ADVOKESMA
+          </button>
+          <button class="item heading-five">
+            PIP
+          </button>
         </div>
       </div>
     </div>
@@ -26,28 +32,28 @@
         </div>
         <div class="header-content-box">
           <div>
-            <h1>John Doe</h1>
-            <p>Kepala Departemen MSD</p>
-            <p>Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.</p>  
+            <h1 class="heading-six">John Doe</h1>
+            <p class="lead-seven">Kepala Departemen MSD</p>
+            <p class="lead-four">Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.</p>  
           </div>
         </div>
       </div>
       <div class="other-dept">
         <div class="box-other-dept">
-          <h1>Nama</h1>
-          <p>Manager Manajemen Sumber Daya</p>
+          <h3 class="heading-seven">Nama</h3>
+          <p class="lead-four">Manager Manajemen Sumber Daya</p>
         </div>
         <div class="box-other-dept">
-          <h1>Nama</h1>
-          <p>Manager Manajemen Sumber Daya</p>
+          <h3 class="heading-seven">Nama</h3>
+          <p class="lead-four">Manager Manajemen Sumber Daya</p>
         </div>
         <div class="box-other-dept">
-          <h1>Nama</h1>
-          <p>Manager Manajemen Sumber Daya</p>
+          <h3 class="heading-seven">Nama</h3>
+          <p class="lead-four">Manager Manajemen Sumber Daya</p>
         </div>
         <div class="box-other-dept">
-          <h1>Nama</h1>
-          <p>Manager Manajemen Sumber Daya</p>
+          <h3 class="heading-seven">Nama</h3>
+          <p class="lead-four">Manager Manajemen Sumber Daya</p>
         </div>
       </div>
     </div>
@@ -62,17 +68,33 @@
 <style lang="scss" scoped>
   .container-bar {
     width: 100%;
-    background-color: black;
+    background-color: #1D404B;
   }
   .container-bar .container {
     display: flex;
     justify-content: space-between;
   }
   .item {
+    // Delete all button style
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+    // Set new style
     width: 100%;
+    height: 63px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #005F7D;
+  }
+
+  .item:hover {
+    background-color: #083B4D;
   }
 
   .header-dept {
@@ -95,7 +117,7 @@
     .header-content-box {
       width: 100%;
       height: 433px;
-      background-color: blue;
+      background-color: #132227;
 
       div {
         height: 100%;
