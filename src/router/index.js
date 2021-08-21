@@ -28,6 +28,11 @@ const routes = [
     path: '/about/bpmif',
     name: 'About BPMIF',
     component: () => import('../views/AboutBPMIF.vue')
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('../views/Contact.vue')
   }
 ]
 
