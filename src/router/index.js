@@ -21,8 +21,13 @@ const routes = [
   },
   {
     path: '/about/emif',
-    name: 'About Emif',
+    name: 'About EMIF',
     component: () => import('../views/AboutEMIF.vue')
+  },
+  {
+    path: '/about/bpmif',
+    name: 'About BPMIF',
+    component: () => import('../views/AboutBPMIF.vue')
   }
 ]
 
