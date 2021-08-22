@@ -38,6 +38,16 @@ const routes = [
     path: '/registration',
     name: 'Registration',
     component: () => import('../views/Registration.vue')
+  },
+  {
+    path: '/scholarship',
+    name: 'Scholarship',
+    component: () => import('../views/Scholarship.vue')
+  },
+  {
+    path: '/detail',
+    name: 'Detail Info',
+    component: () => import('../views/DetailScholar.vue')
   }
 ]
 
