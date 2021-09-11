@@ -4,19 +4,19 @@
       <h2 class="heading-two" style="margin-bottom: 39px">Pendaftaran Aktif</h2>
       <div class="row">
 
-        <div class="col-3 mb-4">
+        <div class="col-lg-3 mb-4">
           <card-comp></card-comp>
         </div>
-        <div class="col-3 mb-4">
+        <div class="col-lg-3 mb-4">
           <card-comp></card-comp>
         </div>
-        <div class="col-3 mb-4">
+        <div class="col-lg-3 mb-4">
           <card-comp></card-comp>
         </div>
-        <div class="col-3 mb-4">
+        <div class="col-lg-3 mb-4">
           <card-comp></card-comp>
         </div>
-        <div class="col-3 mb-4">
+        <div class="col-lg-3 mb-4">
           <card-comp></card-comp>
         </div>
         
