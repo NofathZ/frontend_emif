@@ -10,9 +10,9 @@
       <p>Halaman Sedang Dalam Tahap Pengembangan, Stay Tuned Yaa</p>
     </div>
     <div class="error-back-button-container">
-      <a href="#/" style="text-decoration: none">
+      <router-link to="/" style="text-decoration: none">
         <div class="error-back-button">BACK TO HOME</div>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>

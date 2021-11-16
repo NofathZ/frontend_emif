@@ -1,9 +1,9 @@
 <template>
   <div class="card-container">
-    <a class="heading-three" style="color: white; text-decoration: none" v-bind:href="'/#/' + category.slug + '/' + slug">
+    <router-link class="heading-three" style="color: white; text-decoration: none" v-bind:to="'/' + category.slug + '/' + slug">
         <div class="img-box"></div>
         <p class="heading-seven" style="text-align: center; padding: 0 10px; margin-top: 19px">{{ recommendation.title }}</p>
-    </a>
+    </router-link>
   </div>
 </template>
 

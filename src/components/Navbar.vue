@@ -1,9 +1,9 @@
 <template>
   <b-navbar type="light" variant="dark" toggleable="lg">
     <div class="container-md">
-      <a class="navbar-brand" href="/">
+      <router-link class="navbar-brand" to="/">
         <img :src="HMIFLogo" alt="" />
-      </a>
+      </router-link>
 
       <b-navbar-toggle
         target="nav-collapse"
@@ -15,50 +15,48 @@
         <span class="navbar-text">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
+              <router-link
                 class="nav-link"
                 aria-current="page"
-                href="#/"
+                to="/"
                 style="color: white"
               >
                 Beranda
-              </a>
+              </router-link>
             </li>
             <div>
-              <a href="#/about/" class="nav-link btn btn-secondary dropdown-toggle button-trigger" style="color: white">
+              <router-link to="/about" class="nav-link btn btn-secondary dropdown-toggle button-trigger" style="color: white">
                 Tentang
-              </a>
+              </router-link>
               <div class="dropdown-menu dropdown-item-list">
-                <a class="dropdown-item" href="#/about/emif">EMIF</a>
-                <a class="dropdown-item" href="#/about/bpmif">BPMIF</a>
+                <router-link class="dropdown-item" to="/about/emif">EMIF</router-link>
+                <router-link class="dropdown-item" to="/about/bpmif">BPMIF</router-link>
               </div>
             </div>
 
             <div>
-              <a href="#/categories" class="nav-link btn btn-secondary dropdown-toggle button-trigger" style="color: white">
+              <router-link to="/categories" class="nav-link btn btn-secondary dropdown-toggle button-trigger" style="color: white">
                 Informasi
-              </a>
+              </router-link>
               <div class="dropdown-menu dropdown-item-list">
-                <a class="dropdown-item" href="#/agenda">Agenda</a>
-                <a class="dropdown-item" href="#/beasiswa">Beasiswa</a>
-                <a class="dropdown-item" href="#/pengumuman">Pengumuman</a>
-                <a class="dropdown-item" href="#/lomba">Lomba</a>
-                <a class="dropdown-item" href="#/produk">Produk</a>
-                <a class="dropdown-item" href="#/lowongan"
-                  >Lowongan Pekerjaan</a
-                >
-                <a class="dropdown-item" href="#/artikel">Artikel</a>
+                <router-link class="dropdown-item" to="/agenda">Agenda</router-link>
+                <router-link class="dropdown-item" to="/beasiswa">Beasiswa</router-link>
+                <router-link class="dropdown-item" to="/pengumuman">Pengumuman</router-link>
+                <router-link class="dropdown-item" to="/lomba">Lomba</router-link>
+                <router-link class="dropdown-item" to="/produk">Produk</router-link>
+                <router-link class="dropdown-item" to="/lowongan">Lowongan Pekerjaan</router-link>
+                <router-link class="dropdown-item" to="/artikel">Artikel</router-link>
               </div>
             </div>
 
             <li class="nav-item">
-              <a class="nav-link" href="#/contact" style="color: white">Kontak</a>
+              <router-link class="nav-link" to="/contact" style="color: white">Kontak</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/" style="color: white">Fitur</a>
+              <router-link class="nav-link" to="/" style="color: white">Fitur</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#/pendaftaran" style="color: white">Pendaftaran</a>
+              <router-link class="nav-link" to="/pendaftaran" style="color: white">Pendaftaran</router-link>
             </li>
           </ul>
         </span>
