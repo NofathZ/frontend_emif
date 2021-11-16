@@ -9,7 +9,7 @@
         <p class="lead-five">Dipublikasi pada {{ item.published_at }} oleh {{ user.name }} </p>
         <p class="lead-three">
           {{ item.content }} ...
-          <a class="heading-three" style="color: white; text-decoration: none" v-bind:href="'/#/' + category.slug + '/' + item.slug">Baca selengkapnya</a>
+          <router-link class="heading-three" style="color: white; text-decoration: none" v-bind:to="'/' + category.slug + '/' + item.slug">Baca selengkapnya</router-link>
         </p>
         <p class="heading-seven">
           #beasiswa, #unggulan, #beasiswajuli2021
@@ -64,8 +64,5 @@ export default {
   background-image: url('https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
   background-size: cover;
   background-position: center;
-}
-.read-more {
-
 }
 </style>

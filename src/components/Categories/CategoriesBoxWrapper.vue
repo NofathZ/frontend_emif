@@ -8,7 +8,7 @@
               <h4 class="text-white heading-four mb-4">{{ category.judul }}</h4>
               <p class="text-white lead-four">{{ category.deskripsi }}</p>
             </div>
-            <a v-bind:href= "category.url"><button class="heading-five read-more-btn">Baca Selengkapnya </button></a>
+            <router-link v-bind:to="category.url"><button class="heading-five read-more-btn">Baca Selengkapnya </button></router-link>
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@ export default {
         {
           judul: "Agenda",
           deskripsi: "Dapatkan informasi agenda terkini, terbaru dan relevan sesuai jurusan anda!",
-          url: "/#/agenda",
+          url: "/agenda",
           background: {
             backgroundColor: "#5A0000"
           }
@@ -32,7 +32,7 @@ export default {
         {
           judul: "Beasiswa",
           deskripsi: "Dapatkan informasi beasiswa dari perusahaan dan lembaga pemberi beasiswa terbaik.",
-          url: "/#/beasiswa",
+          url: "/beasiswa",
           background: {
             backgroundColor: "#245100"
           }
@@ -40,7 +40,7 @@ export default {
         {
           judul: "Pendaftaran",
           deskripsi: "Penasaran ada pendaftaran apa saja bulan ini? Yuk cek selengkapnya!",
-          url: "/#/pendaftaran",
+          url: "/pendaftaran",
           background: {
             backgroundColor: "#003141"
           }
@@ -48,7 +48,7 @@ export default {
         {
           judul: "Pengumuman",
           deskripsi: "Segala pengumuman akademik, pendaftar lolos, dan lainnya hanya ada di sini!",
-          url: "/#/pengumuman",
+          url: "/pengumuman",
           background: {
             backgroundColor: "#00084F"
           }
@@ -56,7 +56,7 @@ export default {
         {
           judul: "Lomba",
           deskripsi: "Butuh hiburan? Apa tantangan? Yuk baca seputar lomba terkini informatika di sini!",
-          url: "/#/lomba",
+          url: "/lomba",
           background: {
             backgroundColor: "#525400"
           }
@@ -64,7 +64,7 @@ export default {
         {
           judul: "Produk",
           deskripsi: "Penasaran kan kita punya produk apa aja? Yuk baca selengkapnya di sini!",
-          url: "/#/produk",
+          url: "/produk",
           background: {
             backgroundColor: "#003F06"
           }
@@ -72,7 +72,7 @@ export default {
         {
           judul: "Lowongan Kerja",
           deskripsi: "Dapatkan Info Terkini mengenai lowongan kerja terbuka untuk jurusan Informatika.",
-          url: "/#/lowongan",
+          url: "/lowongan",
           background: {
             backgroundColor: "#004D31"
           }
@@ -80,7 +80,7 @@ export default {
         {
           judul: "Artikel",
           deskripsi: "Bosan dengan akademik? Butuh hiburan? Yuk baca artikel terbaik dari kami!",
-          url: "/#/artikel",
+          url: "/artikel",
           background: {
             backgroundColor: "#310048"
           }

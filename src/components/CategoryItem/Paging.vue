@@ -2,21 +2,21 @@
   <nav aria-label="Page navigation example">
     <ul class="pagination">
       <li class="page-item">
-        <a class="page-link arrow-icon" href="#" aria-label="Previous">
+        <router-link class="page-link arrow-icon" to="#" aria-label="Previous">
           <span aria-hidden="true">&laquo;</span>
-        </a>
+        </router-link>
       </li>
-      <li class="page-item"><a class="page-link number-icon" href="#">1</a></li>
-      <li class="page-item"><a class="page-link number-icon" href="#">2</a></li>
-      <li class="page-item"><a class="page-link number-icon" href="#">3</a></li>
-      <li class="page-item"><a class="page-link number-icon" href="#">4</a></li>
-      <li class="page-item"><a class="page-link number-icon" href="#">5</a></li>
-      <li class="page-item"><a class="page-link number-icon" href="#">6</a></li>
-      <li class="page-item"><a class="page-link number-icon" href="#">7</a></li>
+      <li class="page-item"><router-link class="page-link number-icon" to="#">1</router-link></li>
+      <li class="page-item"><router-link class="page-link number-icon" to="#">2</router-link></li>
+      <li class="page-item"><router-link class="page-link number-icon" to="#">3</router-link></li>
+      <li class="page-item"><router-link class="page-link number-icon" to="#">4</router-link></li>
+      <li class="page-item"><router-link class="page-link number-icon" to="#">5</router-link></li>
+      <li class="page-item"><router-link class="page-link number-icon" to="#">6</router-link></li>
+      <li class="page-item"><router-link class="page-link number-icon" to="#">7</router-link></li>
       <li class="page-item">
-        <a class="page-link arrow-icon" href="#" aria-label="Next">
+        <router-link class="page-link arrow-icon" to="#" aria-label="Next">
           <span aria-hidden="true">&raquo;</span>
-        </a>
+        </router-link>
       </li>
     </ul>
   </nav>

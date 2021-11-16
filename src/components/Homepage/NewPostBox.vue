@@ -9,7 +9,7 @@
     >
       {{ latest.title }}
     </h4>
-    <a v-bind:href= "'/#/' + category.slug + '/' + latest.slug"><button class="more-btn">Baca Selengkapnya</button></a>
+    <router-link v-bind:to= "'/' + category.slug + '/' + latest.slug"><button class="more-btn">Baca Selengkapnya</button></router-link>
   </div>
 </template>
 

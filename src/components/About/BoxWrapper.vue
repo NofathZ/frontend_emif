@@ -19,9 +19,9 @@
               {{ category.deskripsi }}
             </p>
           </div>
-          <a v-bind:href="category.url"
-            ><button class="heading-five read-more-btn">Telusuri</button></a
-          >
+          <router-link v-bind:to="category.url">
+            <button class="heading-five read-more-btn">Telusuri</button>
+          </router-link>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@ export default {
           judul: "Eksekutif Mahasiswa Informatika",
           deskripsi:
             "Eksekutif Mahasiswa Informatika adalah lembaga yang memiliki fungsi sebagai badan eksekutif",
-          url: "/#/about/emif",
+          url: "/about/emif",
           background: {
             backgroundColor: "#003243",
           },
@@ -51,7 +51,7 @@ export default {
           judul: "Himpunan Mahasiswa Informatika",
           deskripsi:
             "HMIF adalah organisasi yang mewadahi, menaungi dan beranggotakan seluruh mahasiswa Informatika FILKOM UB",
-          url: "/#/",
+          url: "/",
           background: {
             backgroundColor: "#1A3A00",
           },
@@ -61,7 +61,7 @@ export default {
           judul: "Badan Perwakilan Mahasiswa Informatika",
           deskripsi:
             "Eksekutif Mahasiswa Informatika adalah lembaga yang memiliki fungsi sebagai badan eksekutif",
-          url: "/#/about/bpmif",
+          url: "/about/bpmif",
           background: {
             backgroundColor: "#470101",
           },

@@ -9,7 +9,7 @@
         <p class="lead-five">Dipublikasi pada {{ item.published_at }} oleh {{ user.name }} </p>
         <p class="lead-three">
           {{ item.content }} ...
-          <a class="heading-three" style="color: white; text-decoration: none" v-bind:href="'/#/' + category.slug + '/' + item.slug">Baca selengkapnya</a>
+          <router-link class="heading-three" style="color: white; text-decoration: none" v-bind:to="'/' + category.slug + '/' + item.slug">Baca selengkapnya</router-link>
         </p>
         <p class="heading-seven">
           #beasiswa, #unggulan, #beasiswajuli2021
