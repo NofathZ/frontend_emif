@@ -107,6 +107,11 @@ const routes = [
     path: '/produk/:slug',
     name: 'Product Detail',
     component: () => import('../views/DetailProduct.vue')
+  },
+  {
+    path: '/coming-soon',
+    name: "Coming Soon",
+    component: () => import('../views/ComingSoon.vue')
   }
 ]
 
