@@ -27,9 +27,9 @@
         <div class="header-img-box">
           <div
             class="img-box"
-            style="
-              background-image: url('https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
-            "
+            v-bind:style="{
+              backgroundImage: 'url(' + groups[indexShow].head.photo + ')',
+            }"
           ></div>
         </div>
         <div class="header-content-box">
@@ -47,21 +47,16 @@
         </div>
       </div>
       <div class="other-dept">
-        <div class="box-other-dept">
-          <h3 class="heading-seven">Nama</h3>
-          <p class="lead-four">Manager Manajemen Sumber Daya</p>
-        </div>
-        <div class="box-other-dept">
-          <h3 class="heading-seven">Nama</h3>
-          <p class="lead-four">Manager Manajemen Sumber Daya</p>
-        </div>
-        <div class="box-other-dept">
-          <h3 class="heading-seven">Nama</h3>
-          <p class="lead-four">Manager Manajemen Sumber Daya</p>
-        </div>
-        <div class="box-other-dept">
-          <h3 class="heading-seven">Nama</h3>
-          <p class="lead-four">Manager Manajemen Sumber Daya</p>
+        <div
+          v-for="(member, index) in groups[indexShow].member"
+          :key="index"
+          class="box-other-dept"
+          v-bind:style="{
+              backgroundImage: 'linear-gradient(hsla(231, 13%, 11%, 0.5),hsla(231, 13%, 11%, 0.5)), url(' + member.photo + ')',
+            }"
+        >
+          <h3 class="heading-seven">{{ member.name }}</h3>
+          <p class="lead-four">{{ member.jabatan }}</p>
         </div>
       </div>
     </div>
@@ -196,11 +191,7 @@ export default {
 
   .box-other-dept {
     height: 295px;
-    background-image: linear-gradient(
-        hsla(231, 13%, 11%, 0.5),
-        hsla(231, 13%, 11%, 0.5)
-      ),
-      url("https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+    // background-color: white; // nanti ini disesuaikan
     background-size: cover;
     background-position: center;
     display: flex;

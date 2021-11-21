@@ -23,19 +23,23 @@ export default {
           head: {
             name: "Nama Kepala MSD",
             task: "Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.",
+            photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
           },
           member: [
             {
               name: "Nama 1",
               jabatan: "Jabatan 1",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 2",
               jabatan: "Jabatan 2",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 3",
               jabatan: "Jabatan 3",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
           ],
         },
@@ -44,19 +48,23 @@ export default {
           head: {
             name: "Nama Kepala Sosma",
             task: "Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.",
+            photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
           },
           member: [
             {
               name: "Nama 1",
               jabatan: "Jabatan 1",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 2",
               jabatan: "Jabatan 2",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 3",
               jabatan: "Jabatan 3",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
           ],
         },
@@ -65,19 +73,23 @@ export default {
           head: {
             name: "Nama Kepala PSDM",
             task: "Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.",
+            photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
           },
           member: [
             {
               name: "Nama 1",
               jabatan: "Jabatan 1",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 2",
               jabatan: "Jabatan 2",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 3",
               jabatan: "Jabatan 3",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
           ],
         },
@@ -86,19 +98,23 @@ export default {
           head: {
             name: "Nama Kepala Advokesma",
             task: "Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.",
+            photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
           },
           member: [
             {
               name: "Nama 1",
               jabatan: "Jabatan 1",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 2",
               jabatan: "Jabatan 2",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 3",
               jabatan: "Jabatan 3",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
           ],
         },
@@ -107,19 +123,23 @@ export default {
           head: {
             name: "Nama Kepala PIP",
             task: "Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.",
+            photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
           },
           member: [
             {
               name: "Nama 1",
               jabatan: "Jabatan 1",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 2",
               jabatan: "Jabatan 2",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 3",
               jabatan: "Jabatan 3",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
           ],
         },
@@ -135,15 +155,18 @@ export default {
           member: [
             {
               name: "Nama 1",
-              jabatan: "Jabatan 1"
+              jabatan: "Jabatan 1",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 2",
-              jabatan: "Jabatan 2"
+              jabatan: "Jabatan 2",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 3",
-              jabatan: "Jabatan 3"
+              jabatan: "Jabatan 3",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             }
           ]
         },
@@ -157,15 +180,18 @@ export default {
           member: [
             {
               name: "Nama 1",
-              jabatan: "Jabatan 1"
+              jabatan: "Jabatan 1",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 2",
-              jabatan: "Jabatan 2"
+              jabatan: "Jabatan 2",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 3",
-              jabatan: "Jabatan 3"
+              jabatan: "Jabatan 3",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             }
           ]
         },
@@ -179,15 +205,18 @@ export default {
           member: [
             {
               name: "Nama 1",
-              jabatan: "Jabatan 1"
+              jabatan: "Jabatan 1",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 2",
-              jabatan: "Jabatan 2"
+              jabatan: "Jabatan 2",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             },
             {
               name: "Nama 3",
-              jabatan: "Jabatan 3"
+              jabatan: "Jabatan 3",
+              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
             }
           ]
         },
