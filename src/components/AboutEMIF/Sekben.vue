@@ -22,7 +22,7 @@
         <div class="col d-flex justify-content-center align-items-center">
           <div class="box-container m-3">
             <div class="img-box">
-              <img :src="dataSekben.dataAnggota[1].gambar" alt="" />
+              <img style="object-fit: cover" :src="dataSekben.dataAnggota[1].gambar" alt="" />
             </div>
             <div class="content-box">
               <h1 class="heading-two">{{ dataSekben.dataAnggota[1].nama }}</h1>
@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import FotoKetua from "../../assets/img/AboutEMIF/ketua.png";
+import FotoKetua from "../../assets/img/AboutEMIF/Internal/kahim.png";
 
 export default {
   props: ["dataSekben"],

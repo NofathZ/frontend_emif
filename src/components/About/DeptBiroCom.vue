@@ -27,9 +27,9 @@
         <div class="header-img-box">
           <div
             class="img-box"
-            style="
-              background-image: url('https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
-            "
+            v-bind:style="{
+              backgroundImage: 'url(' + groups[indexShow].head.photo + ')',
+            }"
           ></div>
         </div>
         <div class="header-content-box">
@@ -47,30 +47,34 @@
         </div>
       </div>
       <div class="other-dept">
-        <div class="box-other-dept">
-          <h3 class="heading-seven">Nama</h3>
-          <p class="lead-four">Manager Manajemen Sumber Daya</p>
-        </div>
-        <div class="box-other-dept">
-          <h3 class="heading-seven">Nama</h3>
-          <p class="lead-four">Manager Manajemen Sumber Daya</p>
-        </div>
-        <div class="box-other-dept">
-          <h3 class="heading-seven">Nama</h3>
-          <p class="lead-four">Manager Manajemen Sumber Daya</p>
-        </div>
-        <div class="box-other-dept">
-          <h3 class="heading-seven">Nama</h3>
-          <p class="lead-four">Manager Manajemen Sumber Daya</p>
+        <div
+          v-for="(bph, index) in groups[indexShow].bph"
+          :key="index"
+          class="box-other-dept"
+          v-bind:style="{
+            backgroundImage:
+              'linear-gradient(hsla(231, 13%, 11%, 0.5),hsla(231, 13%, 11%, 0.5)), url(' +
+              bph.photo +
+              ')',
+          }"
+        >
+          <h3 class="heading-seven" style="text-align: center">{{ bph.name }}</h3>
+          <p class="lead-four" style="text-align: center">{{ bph.jabatan }}</p>
         </div>
       </div>
+      <staf-com v-bind:members="groups[indexShow].member" />
     </div>
   </div>
 </template>
 
 <script>
+import Staf from "../About/Staff.vue";
+
 export default {
   props: ["groups"],
+  components: {
+    "staf-com": Staf,
+  },
   data: function () {
     return {
       indexShow: 0,
@@ -79,6 +83,11 @@ export default {
   methods: {
     setIndexShow(number) {
       this.indexShow = number;
+    },
+  },
+  computed: {
+    stail() {
+      return {};
     },
   },
 };
@@ -128,12 +137,13 @@ export default {
     width: 433px;
     height: 433px;
     float: left;
+    background-color: #a4a5a6;
 
     .img-box {
       height: 100%;
       width: 433px;
       background-size: cover;
-      background-position: center;
+      background-position: center top;
     }
   }
 
@@ -153,6 +163,16 @@ export default {
     .header-explain-box {
       padding: 20px;
     }
+  }
+}
+
+.other-dept {
+  .box-other-dept {
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1px;
+    box-sizing: border-box;
   }
 }
 
@@ -196,13 +216,10 @@ export default {
 
   .box-other-dept {
     height: 295px;
-    background-image: linear-gradient(
-        hsla(231, 13%, 11%, 0.5),
-        hsla(231, 13%, 11%, 0.5)
-      ),
-      url("https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-    background-size: cover;
-    background-position: center;
+    // background-color: white; // nanti ini disesuaikan
+    background-color: rgb(68, 68, 68);
+    // background-size: cover;
+    // background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -22,16 +22,16 @@ export default {
           title: "Sekretaris",
           dataAnggota: [
             {
-              nama: "Nama Sekretaris 1",
+              nama: "Nur Laili Amalia",
               jabatan: "Sekretaris 1",
               tugas: "Bertanggung jawab untuk membantu ketua umum EMIF dalam koordinasi terhadap departemen dan biro yang ada di EMIF FILKOM UB.",
-              gambar: require('../../assets/img/AboutEMIF/ketua.png')
+              gambar: require('../../assets/img/AboutEMIF/Internal/sekretaris1.png')
             },
             {
-              nama: "Nama Sekretaris 2",
+              nama: "Annisa Sukmawati",
               jabatan: "Sekretaris 2",
               tugas: "Bertanggung jawab untuk membantu ketua umum EMIF dalam koordinasi terhadap departemen dan biro yang ada di EMIF FILKOM UB.",
-              gambar: require('../../assets/img/AboutEMIF/ketua.png')
+              gambar: require('../../assets/img/AboutEMIF/Internal/sekretaris2.png')
             }
           ]
         },
@@ -39,16 +39,16 @@ export default {
           title: "Bendahara",
           dataAnggota: [
             {
-              nama: "Nama Bendahara 1",
-              jabatan: "Bendahara 1",
+              nama: "Atikah Nabila",
+              jabatan: "Bendahara Internal",
               tugas: "Bertanggung jawab untuk membantu ketua umum EMIF dalam koordinasi terhadap departemen dan biro yang ada di EMIF FILKOM UB.",
-              gambar: require('../../assets/img/AboutEMIF/ketua.png')
+              gambar: require('../../assets/img/AboutEMIF/Internal/bendahara1.jpg')
             },
             {
-              nama: "Nama Bendahara 2",
-              jabatan: "Bendahara 2",
+              nama: "Rebecca Octaviani",
+              jabatan: "Bendahara External",
               tugas: "Bertanggung jawab untuk membantu ketua umum EMIF dalam koordinasi terhadap departemen dan biro yang ada di EMIF FILKOM UB.",
-              gambar: require('../../assets/img/AboutEMIF/ketua.png')
+              gambar: require('../../assets/img/AboutEMIF/Internal/bendahara2.jpg')
             }
           ]
         },

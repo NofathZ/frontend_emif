@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-lg photo-box" style="padding: 0">
             <div class="photo">
-              <img :src="FotoKetua" alt="" />
+              <img style="object-fit: cover" :src="FotoKetua" alt="" />
             </div>
           </div>
           <div
@@ -13,7 +13,7 @@
             style="padding: 0"
           >
             <div class="detail">
-              <h1 class="heading-two">Pak Ketua</h1>
+              <h1 class="heading-two">Achmad Fais Alif Adityo</h1>
               <p class="lead-three">Ketua EMIF</p>
               <p class="lead-four">
                 Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import FotoKetua from '../../assets/img/AboutEMIF/ketua.png';
+import FotoKetua from '../../assets/img/AboutEMIF/Internal/kahim.png';
 
 export default {
   data: function() {

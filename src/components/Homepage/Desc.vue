@@ -6,11 +6,9 @@
         Brawijaya (HMIF FILKOM UB) adalah organisasi yang mewadahi, menaungi dan
         beranggotakan seluruh mahasiswa Informatika FILKOM UB.
       </h1>
-      <button class="desc-btn">
-        Rincian
-      </button>
+      <button class="desc-btn">Rincian</button>
     </div>
-    <div>
+    <div class="img-box">
       <img :src="HMIFLogo" alt="" />
     </div>
   </div>
@@ -19,23 +17,26 @@
 <script>
 import HMIFLogo from "../../assets/img/HomePage/logo-hmif.png";
 export default {
-  data: function() {
+  data: function () {
     return {
-      HMIFLogo
+      HMIFLogo,
     };
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .dark-container {
   background-color: #000f14;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 170px;
   padding-top: 20px;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 993px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .head-desc {
@@ -43,6 +44,12 @@ export default {
   text-align: center;
   color: white;
   margin-bottom: 31px;
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .desc-box {
