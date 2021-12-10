@@ -2,21 +2,19 @@
   <div>
     <div class="container">
       <div class="other-dept">
-        <div class="box-other-dept">
-          <h3 class="heading-seven">Nama</h3>
-          <p class="lead-four">Manager Manajemen Sumber Daya</p>
-        </div>
-        <div class="box-other-dept">
-          <h3 class="heading-seven">Nama</h3>
-          <p class="lead-four">Manager Manajemen Sumber Daya</p>
-        </div>
-        <div class="box-other-dept">
-          <h3 class="heading-seven">Nama</h3>
-          <p class="lead-four">Manager Manajemen Sumber Daya</p>
-        </div>
-        <div class="box-other-dept">
-          <h3 class="heading-seven">Nama</h3>
-          <p class="lead-four">Manager Manajemen Sumber Daya</p>
+        <div
+          v-for="(member, index) in members"
+          :key="index"
+          class="box-other-dept"
+          v-bind:style="{
+            backgroundImage:
+              'linear-gradient(hsla(231, 13%, 11%, 0.5),hsla(231, 13%, 11%, 0.5)), url(' +
+              member.photo +
+              ')',
+          }"
+        >
+          <h3 class="heading-seven" style="text-align: center">{{ member.name }}</h3>
+          <p class="lead-four" style="text-align: center">{{ member.jabatan }}</p>
         </div>
       </div>
     </div>
@@ -24,11 +22,12 @@
 </template>
 
 <script>
-
+export default {
+  props: ["members"],
+};
 </script>
 
 <style lang="scss" scoped>
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -53,13 +52,9 @@
 
   .box-other-dept {
     height: 295px;
-    background-image: linear-gradient(
-        rgba(24, 25, 31, 0.8),
-        rgba(24, 25, 31, 0.8)
-      ),
-      url("https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,5 +78,4 @@
     flex: 1;
   }
 }
-
 </style>

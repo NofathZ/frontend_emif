@@ -13,7 +13,7 @@
             style="padding: 0"
           >
             <div class="detail">
-              <h1 class="heading-two">Pak Wakil Ketua</h1>
+              <h1 class="heading-two">Dimi Karillah Putra</h1>
               <p class="lead-three">Wakil Ketua EMIF</p>
               <p class="lead-four">
                 Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF
@@ -24,7 +24,7 @@
           </div>
           <div class="col-lg photo-box d-none d-lg-block" style="padding: 0">
             <div class="photo">
-              <img :src="FotoWakilKetua" alt="" />
+              <img style="object-fit: cover; object-position: center top;" :src="FotoWakilKetua" alt="" />
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import FotoWakilKetua from "../../assets/img/AboutEMIF/wakilketua.png";
+import FotoWakilKetua from "../../assets/img/AboutEMIF/Internal/wakahim.png";
 
 export default {
   data: function() {

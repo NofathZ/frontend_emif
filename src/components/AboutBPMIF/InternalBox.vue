@@ -22,23 +22,23 @@ export default {
           head: {
             name: "Nama Kepala Komisi I",
             task: "Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.",
-            photo: require("../../assets/img/AboutEMIF/advo/dias1.png"),
+            photo: require("../../assets/img/profile-logo.svg"),
           },
-          member: [
+          bph: [
             {
               name: "Nama 1",
               jabatan: "Jabatan 1",
-              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
+              photo: require("../../assets/img/profile-logo.svg"),
             },
             {
               name: "Nama 2",
               jabatan: "Jabatan 2",
-              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
+              photo: require("../../assets/img/profile-logo.svg"),
             },
             {
               name: "Nama 3",
               jabatan: "Jabatan 3",
-              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
+              photo: require("../../assets/img/profile-logo.svg"),
             },
           ],
         },
@@ -48,21 +48,21 @@ export default {
             name: "Nama Kepala Komisi II",
             task: "Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.",
           },
-          member: [
+          bph: [
             {
               name: "Nama 1",
               jabatan: "Jabatan 1",
-              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
+              photo: require("../../assets/img/profile-logo.svg"),
             },
             {
               name: "Nama 2",
               jabatan: "Jabatan 2",
-              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
+              photo: require("../../assets/img/profile-logo.svg"),
             },
             {
               name: "Nama 3",
               jabatan: "Jabatan 3",
-              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
+              photo: require("../../assets/img/profile-logo.svg"),
             },
           ],
         },
@@ -72,21 +72,21 @@ export default {
             name: "Nama Kepala Komisi III",
             task: "Bertanggung jawab atas seluruh kegiatan yang diadakan oleh EMIF FILKOM UB dan bertindak sebagai pengambil kebijakan tertinggi EMIF FILKOM UB.",
           },
-          member: [
+          bph: [
             {
               name: "Nama 1",
               jabatan: "Jabatan 1",
-              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
+              photo: require("../../assets/img/profile-logo.svg"),
             },
             {
               name: "Nama 2",
               jabatan: "Jabatan 2",
-              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
+              photo: require("../../assets/img/profile-logo.svg"),
             },
             {
               name: "Nama 3",
               jabatan: "Jabatan 3",
-              photo: require("../../assets/img/AboutEMIF/advo/dias1.png")
+              photo: require("../../assets/img/profile-logo.svg"),
             },
           ],
         },
