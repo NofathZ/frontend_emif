@@ -1,13 +1,13 @@
 <template>
-  <b-navbar type="light" variant="dark" toggleable="lg">
+  <b-navbar type="dark" variant="dark" toggleable="lg" sticky>
     <div class="container-md">
       <router-link class="navbar-brand" to="/">
         <img :src="HMIFLogo" alt="" />
       </router-link>
 
       <b-navbar-toggle
+        class="navbar-toggle-btn"
         target="nav-collapse"
-        style="background: white"
       ></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -24,18 +24,18 @@
                 Beranda
               </router-link>
             </li>
-            <div>
-              <router-link to="/about" class="nav-link btn btn-secondary dropdown-toggle button-trigger" style="color: white">
+            <li class="nav-item">
+              <router-link to="/about" class="nav-link dropdown-toggle button-trigger" style="color: white">
                 Tentang
               </router-link>
               <div class="dropdown-menu dropdown-item-list">
                 <router-link class="dropdown-item" to="/about/emif">EMIF</router-link>
                 <router-link class="dropdown-item" to="/about/bpmif">BPMIF</router-link>
               </div>
-            </div>
+            </li>
 
             <div>
-              <router-link to="/categories" class="nav-link btn btn-secondary dropdown-toggle button-trigger" style="color: white">
+              <router-link to="/categories" class="nav-link dropdown-toggle button-trigger" style="color: white">
                 Informasi
               </router-link>
               <div class="dropdown-menu dropdown-item-list">
@@ -87,5 +87,13 @@ export default {
 }
 .dropdown-item-list:hover {
   display: block;
+}
+.dropdown-item:hover {
+  background: rgba($color: #ffffff, $alpha: 0.2) !important;
+}
+.dropdown-menu {
+  border: none !important;
+  background: none !important;
+  background: rgba($color: #ffffff, $alpha: 0.2) !important;
 }
 </style>

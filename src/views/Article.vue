@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import axios from "axios";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import Header from "../components/CategoryItem/Header.vue";
@@ -21,34 +22,34 @@ export default {
     "navbar-comp": Navbar,
     "footer-comp": Footer,
     "header-comp": Header,
-    "list-wrapper": ListWrapper
+    "list-wrapper": ListWrapper,
   },
-  data: function() {
+  data: function () {
     return {
       headerType: "Artikel",
       headerDesc:
         "Dapatkan informasi artikel dari perusahaan dan lembaga pemberi artikel terbaik",
-      items: []
+      items: [],
     };
   },
   methods: {
     getList() {
       axios
         .get("api/posts/artikel")
-        .then(response => {
+        .then((response) => {
           this.items = response.data;
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
-    }
+    },
   },
   mounted() {
     window.scrollTo(0, 0);
   },
   created() {
     this.getList();
-  }
+  },
 };
 </script>
 

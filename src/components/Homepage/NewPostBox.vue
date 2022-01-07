@@ -9,30 +9,35 @@
     >
       {{ latest.title }}
     </h4>
-    <router-link v-bind:to= "'/' + category.slug + '/' + latest.slug"><button class="more-btn">Baca Selengkapnya</button></router-link>
+    <router-link v-bind:to="'/' + category.slug + '/' + latest.slug"
+      ><button class="more-btn">Baca Selengkapnya</button></router-link
+    >
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
-  props: ['latest'],
-  data: function() {
+  props: ["latest"],
+  data: function () {
     return {
-      category: []
+      category: [],
     };
   },
   methods: {
-    getCategory () {
-        axios.get('api/posts/' + this.latest.slug + '/category')
-      .then( (response) =>{
-        this.category = response.data
-      } )
-    }
+    getCategory() {
+      axios
+        .get("api/posts/" + this.latest.slug + "/category")
+        .then((response) => {
+          this.category = response.data;
+        });
+    },
   },
   created() {
     this.getCategory();
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>

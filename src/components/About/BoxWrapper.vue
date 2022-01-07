@@ -12,10 +12,10 @@
             <img :src="category.img" />
           </div>
           <div class="mb-4">
-            <h4 class="text-white heading-four mb-4 category-title-text">
+            <h4 class="text-white heading-tree mb-4 category-title-text">
               {{ category.judul }}
             </h4>
-            <p class="text-white lead-four category-desc-text">
+            <p class="text-white lead-tree category-desc-text">
               {{ category.deskripsi }}
             </p>
           </div>
@@ -90,7 +90,7 @@ export default {
   padding: 1rem;
   position: relative;
   border-radius: 10px;
-  border: 2px solid white;
+  margin: 20px 10px;
 
   &::-webkit-scrollbar {
     display: none;
@@ -117,7 +117,7 @@ export default {
   }
 }
 .category-title-text {
-  min-height: 40px;
+  min-height: 100px;
 }
 .category-desc-text {
   min-height: 100px;
