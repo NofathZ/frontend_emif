@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import axios from "axios";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import DetailInfo from "../components/DetailCategoryItem/DetailInfo.vue";
@@ -18,26 +19,28 @@ export default {
     "navbar-comp": Navbar,
     "footer-comp": Footer,
     "detail-info": DetailInfo,
-    "other-post": OtherPost
+    "other-post": OtherPost,
   },
-  data: function() {
+  data: function () {
     return {
       item: [],
-      recommendations: []
+      recommendations: [],
     };
   },
   methods: {
     getPost() {
-      axios.get("api/posts/beasiswa/" + this.$route.params.slug)
-      .then( (response) =>{
-        this.item = response.data
-      } )
+      axios
+        .get("api/posts/beasiswa/" + this.$route.params.slug)
+        .then((response) => {
+          this.item = response.data;
+        });
     },
     getRecommendations() {
-      axios.get("api/posts/recommendations/beasiswa/" + this.$route.params.slug)
-      .then( (response) =>{
-        this.recommendations = response.data
-      } )
+      axios
+        .get("api/posts/recommendations/beasiswa/" + this.$route.params.slug)
+        .then((response) => {
+          this.recommendations = response.data;
+        });
     },
     // getInfo() {
     //   axios
@@ -62,7 +65,7 @@ export default {
     // this.getInfo();
     this.getPost();
     this.getRecommendations();
-  }
+  },
 };
 </script>
 

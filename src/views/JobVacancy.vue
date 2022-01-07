@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import axios from "axios";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import Header from "../components/CategoryItem/Header.vue";

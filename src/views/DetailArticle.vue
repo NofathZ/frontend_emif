@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import axios from "axios";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import DetailInfo from "../components/DetailCategoryItem/DetailInfo.vue";
@@ -18,12 +19,12 @@ export default {
     "navbar-comp": Navbar,
     "footer-comp": Footer,
     "detail-info": DetailInfo,
-    "other-post": OtherPost
+    "other-post": OtherPost,
   },
-  data: function() {
+  data: function () {
     return {
       post: [],
-      recommendations: []
+      recommendations: [],
     };
   },
   methods: {
@@ -33,7 +34,7 @@ export default {
           axios.get("api/posts/artikel/" + this.$route.params.slug),
           axios.get(
             "api/posts/recommendations/artikel/" + this.$route.params.slug
-          )
+          ),
         ])
         .then(
           axios.spread((post, recommendations) => {
@@ -51,14 +52,14 @@ export default {
       // .catch( error => {
       //   console.log( error );
       // })
-    }
+    },
   },
   mounted() {
     window.scrollTo(0, 0);
   },
   created() {
     this.getInfo();
-  }
+  },
 };
 </script>
 

@@ -1,7 +1,9 @@
 <template>
   <div class="dark-container">
     <div class="newpost-wrapper">
-      <h2 class="heading-two" style="text-align: center; color: white">Postingan Terbaru</h2>
+      <h2 class="heading-two" style="text-align: center; color: white">
+        Postingan Terbaru
+      </h2>
       <div class="list-post">
         <div v-for="(latest, index) in latests" :key="index">
           <new-post-box :latest="latest"></new-post-box>
@@ -12,29 +14,29 @@
 </template>
 
 <script>
-import NewPostBox from './NewPostBox.vue';
+import NewPostBox from "./NewPostBox.vue";
+import axios from 'axios'
 
 export default {
   components: {
-    'new-post-box': NewPostBox
+    "new-post-box": NewPostBox,
   },
-  data: function() {
+  data: function () {
     return {
-      latests: []
+      latests: [],
     };
   },
   methods: {
-    getLatest () {
-        axios.get('api/posts/latest')
-      .then( (response) =>{
-        this.latests = response.data
-      } )
-    }
+    getLatest() {
+      axios.get("api/posts/latest").then((response) => {
+        this.latests = response.data;
+      });
+    },
   },
   created() {
     this.getLatest();
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>
