@@ -25,38 +25,73 @@
               </router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/about" class="nav-link dropdown-toggle button-trigger" style="color: white">
+              <router-link
+                to="/about"
+                class="nav-link dropdown-toggle button-trigger"
+                style="color: white"
+              >
                 Tentang
               </router-link>
               <div class="dropdown-menu dropdown-item-list">
-                <router-link class="dropdown-item" to="/about/emif">EMIF</router-link>
-                <router-link class="dropdown-item" to="/about/bpmif">BPMIF</router-link>
+                <router-link class="dropdown-item" to="/about/emif"
+                  >EMIF</router-link
+                >
+                <router-link class="dropdown-item" to="/about/bpmif"
+                  >BPMIF</router-link
+                >
               </div>
             </li>
 
             <div>
-              <router-link to="/categories" class="nav-link dropdown-toggle button-trigger" style="color: white">
+              <router-link
+                to="/categories"
+                class="nav-link dropdown-toggle button-trigger"
+                style="color: white"
+              >
                 Informasi
               </router-link>
               <div class="dropdown-menu dropdown-item-list">
-                <router-link class="dropdown-item" to="/agenda">Agenda</router-link>
-                <router-link class="dropdown-item" to="/beasiswa">Beasiswa</router-link>
-                <router-link class="dropdown-item" to="/pengumuman">Pengumuman</router-link>
-                <router-link class="dropdown-item" to="/lomba">Lomba</router-link>
-                <router-link class="dropdown-item" to="/produk">Produk</router-link>
-                <router-link class="dropdown-item" to="/lowongan">Lowongan Pekerjaan</router-link>
-                <router-link class="dropdown-item" to="/artikel">Artikel</router-link>
+                <router-link class="dropdown-item" to="/agenda"
+                  >Agenda</router-link
+                >
+                <router-link class="dropdown-item" to="/beasiswa"
+                  >Beasiswa</router-link
+                >
+                <router-link class="dropdown-item" to="/pengumuman"
+                  >Pengumuman</router-link
+                >
+                <router-link class="dropdown-item" to="/lomba"
+                  >Lomba</router-link
+                >
+                <router-link class="dropdown-item" to="/produk"
+                  >Produk</router-link
+                >
+                <router-link class="dropdown-item" to="/lowongan"
+                  >Lowongan Pekerjaan</router-link
+                >
+                <router-link class="dropdown-item" to="/artikel"
+                  >Artikel</router-link
+                >
               </div>
             </div>
 
             <li class="nav-item">
-              <router-link class="nav-link" to="/contact" style="color: white">Kontak</router-link>
+              <router-link class="nav-link" to="/contact" style="color: white"
+                >Kontak</router-link
+              >
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/" style="color: white">Fitur</router-link>
+              <router-link class="nav-link" to="/" style="color: white"
+                >Fitur</router-link
+              >
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/pendaftaran" style="color: white">Pendaftaran</router-link>
+              <router-link
+                class="nav-link"
+                to="/pendaftaran"
+                style="color: white"
+                >Pendaftaran</router-link
+              >
             </li>
           </ul>
         </span>
@@ -69,11 +104,11 @@
 import HMIFLogo from "../assets/img/hmif-logo.svg";
 
 export default {
-  data: function() {
+  data: function () {
     return {
-      HMIFLogo
+      HMIFLogo,
     };
-  }
+  },
 };
 </script>
 
@@ -88,12 +123,15 @@ export default {
 .dropdown-item-list:hover {
   display: block;
 }
+.dropdown-item {
+  color: black !important;
+}
 .dropdown-item:hover {
-  background: rgba($color: #ffffff, $alpha: 0.2) !important;
+  background: rgba($color: #000000, $alpha: 0.2) !important;
 }
 .dropdown-menu {
   border: none !important;
   background: none !important;
-  background: rgba($color: #ffffff, $alpha: 0.2) !important;
+  background: #ffffff !important;
 }
 </style>
