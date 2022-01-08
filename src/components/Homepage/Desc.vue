@@ -44,6 +44,10 @@ export default {
   text-align: center;
   color: white;
   margin-bottom: 31px;
+
+  @media screen and (max-width: 992px) {
+    padding: 0 50px;
+  }
 }
 
 .img-box {
